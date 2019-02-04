@@ -1,0 +1,9 @@
+@(title:String,form1:Form[models.Message])
+
+@main("Welcome to Play") {
+  <h1>@title</h1>
+  @helper.form(action=routes.HomeController.delete){
+      @(helper.inputText(field=form1("id")))
+      <input type="submit">
+  }
+}

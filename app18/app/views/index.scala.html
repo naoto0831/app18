@@ -1,0 +1,8 @@
+@(message:String,datas:List[Message])
+
+@main("Welcome to Play") {
+  <h1>@message</h1>
+  <p>@datas</p>
+  <p><a href="@routes.HomeController.add">登録</a></p>
+  <p><a href="@routes.HomeController.remove">削除</a></p>
+}
